@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+    <th:block th:if="${verified}">
+        Welcome <span th:text="${user.username}"></span>
+    </th:block><br />
+    <a th:href="@{/}">Home</a>
+</body>
+</html>
